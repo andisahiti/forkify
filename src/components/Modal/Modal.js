@@ -18,7 +18,7 @@ const Modal = (props) => {
             }}
         >
             <h2>The input in not part of the search queries !</h2>
-            <h3>You can see all the search queries in the like bellow</h3>
+            <h3>You can see all the search queries in the link bellow</h3>
             <h4><a href="https://forkify-api.herokuapp.com/phrases.html">https://forkify-api.herokuapp.com/phrases.html</a></h4>
             <br></br>
             <button style={{
