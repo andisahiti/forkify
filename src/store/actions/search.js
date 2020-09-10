@@ -42,7 +42,7 @@ export const searchRecipe = (query) => {
             dispatch(searchSuccess(fetchedRecipes))
             dispatch(endSearching())
         }).catch(error => {
-            alert(error)
+            alert(`Error 404 : Recipe not found `)
         })
     }
 }
