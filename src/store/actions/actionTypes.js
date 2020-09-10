@@ -24,4 +24,6 @@ export const LOCAL_ING = 'LOCAL_ING'
 export const LOCAL_LIKE = 'LOCAL_LIKE'
 export const LOCAL_RECIPE = 'LOCAL_RECIPE'
 export const LOCAL_SEARCH = 'LOCAL_SEARCH'
+export const ERROR = 'ERROR'
+export const CLEAR_ERROR = 'CLEAR_ERROR'
 

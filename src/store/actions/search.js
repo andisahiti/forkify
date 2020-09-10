@@ -21,6 +21,17 @@ export const clearRecipes = () => {
         type: actionTypes.CLEAR_RECIPES
     }
 }
+export const errorFetch = () => {
+    return {
+        type: actionTypes.ERROR
+
+    }
+}
+export const clearError = () => {
+    return {
+        type: actionTypes.CLEAR_ERROR
+    }
+}
 
 export const searchSuccess = (recipes) => {
     return {
@@ -28,6 +39,8 @@ export const searchSuccess = (recipes) => {
         recipes: recipes
     }
 }
+
+
 export const searchRecipe = (query) => {
     return dispatch => {
         dispatch(startSearching())
@@ -42,7 +55,7 @@ export const searchRecipe = (query) => {
             dispatch(searchSuccess(fetchedRecipes))
             dispatch(endSearching())
         }).catch(error => {
-           
+            dispatch(errorFetch())
         })
     }
 }

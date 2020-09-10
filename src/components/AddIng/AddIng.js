@@ -1,5 +1,4 @@
 import React from 'react'
-import icons from '../../assets/img/icons.svg'
 import { connect } from 'react-redux'
 import * as action from '../../store/actions/index'
 

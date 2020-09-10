@@ -3,7 +3,8 @@ import * as actionTypes from '../actions/actionTypes';
 const initialState = {
     recipes: [],
     input: '',
-    loading: false
+    loading: false,
+    error: false
 }
 
 const searchReducer = (state = initialState, action) => {
@@ -32,6 +33,18 @@ const searchReducer = (state = initialState, action) => {
             return {
                 ...state,
                 input: '',
+            }
+        case actionTypes.ERROR:
+            return {
+                ...state,
+                input: '',
+                loading: false,
+                error: true
+            }
+        case actionTypes.CLEAR_ERROR:
+            return {
+                ...state,
+                error: false
             }
 
 

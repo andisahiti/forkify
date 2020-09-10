@@ -5,6 +5,8 @@ import Ingredients from './Ingredients/Ingredients'
 import RecipeView from './Recipes/Recipe/Recipe'
 import { connect } from 'react-redux';
 import * as action from '../store/actions/index'
+import Modal from '../components/Modal/Modal';
+import BackDrop from '../components/BackDrop/BackDrop';
 const Main = (props) => {
 
 
@@ -14,17 +16,18 @@ const Main = (props) => {
         props.localRecipe()
     }, [])
 
-
     return (
         <div className="container">
             <Search></Search>
-
+            <Modal ></Modal>
+            <BackDrop></BackDrop>
             <RecipeView></RecipeView>
 
             <Ingredients></Ingredients>
         </div>
     )
 }
+
 
 const mapDispatchToProps = dispatch => {
     return {

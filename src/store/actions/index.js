@@ -1,4 +1,4 @@
-export { searchRecipe, inputSearch, clear, clearRecipes } from './search';
+export { searchRecipe, inputSearch, clear, clearRecipes, clearError } from './search';
 
 export { fetch, localRecipe } from './recipe'
 export { like, isLiked, unlike, localLike } from './liked'
